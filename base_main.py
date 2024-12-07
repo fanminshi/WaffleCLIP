@@ -57,6 +57,8 @@ parser.add_argument('--reps', type=int, default=1,
                     help='Number of repetitions to run a method for with changing randomization. Default value should be >7 for WaffleCLIP variants.')
 parser.add_argument('--savename', type=str, default='results',
                     help='Name of csv-file in which results are stored.')
+parser.add_argument('--user_path', type=str,
+                    help='Username for dataset paths.')
 ###
 parser.add_argument('--vmf_scale', type=float, default=1)
 opt = parser.parse_args()

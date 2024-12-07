@@ -14,7 +14,10 @@ from torch.nn import functional as F
 from torchvision.datasets import ImageNet, EuroSAT, Food101, Flowers102, Places365, OxfordIIITPet, DTD, FGVCAircraft, StanfordCars
 import tqdm
 
-from datasets import _transform, CUBDataset
+from datasets_waffleclip import _transform, CUBDataset
+from datasets import load_dataset
+
+from dotenv import load_dotenv
 
 # List of methods available to use.
 METHODS = [
@@ -51,7 +54,8 @@ DATASETS = [
     'pets', 
     'flowers102', 
     'fgvcaircraft', 
-    'cars'
+    'cars',
+    'wikiart'
 ]
 
 # List of compatible backbones.
@@ -89,18 +93,29 @@ def setup(opt: argparse.Namespace):
         opt.image_size = 448
 
     opt.descriptor_fname = None
+    
+    if not opt.user_path:
+        load_dotenv()
 
-    IMAGENET_DIR = '/scratch-shared/fshi/waffle-data/ImageNet2012' # REPLACE THIS WITH YOUR OWN PATH
-    IMAGENETV2_DIR = '/scratch-shared/fshi/waffle-data/ImageNetV2' # REPLACE THIS WITH YOUR OWN PATH
-    CUB_DIR = '/scratch-shared/fshi/waffle-data/cub200' # REPLACE THIS WITH YOUR OWN PATH
-    EUROSAT_DIR = '/scratch-shared/fshi/waffle-data/eurosat' # REPLACE THIS WITH YOUR OWN PATH
-    PLACES365_DIR = '/scratch-shared/fshi/waffle-data/places365' # REPLACE THIS WITH YOUR OWN PATH
-    PETS_DIR = '/scratch-shared/fshi/waffle-data/pets' # REPLACE THIS WITH YOUR OWN PATH
-    FOOD101_DIR = '/scratch-shared/fshi/waffle-data/food101' # REPLACE THIS WITH YOUR OWN PATH
-    DTD_DIR = '/scratch-shared/fshi/waffle-data/dtd' # REPLACE THIS WITH YOUR OWN PATH
-    FLOWERS102_DIR = '/scratch-shared/fshi/waffle-data/flowers102' # REPLACE THIS WITH YOUR OWN PATH
-    FGVCAIRCRAFT_DIR = '/scratch-shared/fshi/waffle-data/fgvcaircraft' # REPLACE THIS WITH YOUR OWN PATH
-    CARS_DIR = '/scratch-shared/fshi/waffle-data/cars' # REPLACE THIS WITH YOUR OWN PATH
+        # Get API key from environment variables
+        USER = os.getenv('USER')
+
+        if not USER:
+            raise ValueError("USER environment variable is not set. Please check your .env file.")
+        opt.user_path = USER
+    
+    IMAGENET_DIR = f'/scratch-shared/{opt.user_path}/waffle-data/ImageNet2012'
+    IMAGENETV2_DIR = f'/scratch-shared/{opt.user_path}/waffle-data/ImageNetV2'
+    CUB_DIR = f'/scratch-shared/{opt.user_path}/waffle-data/cub200'
+    EUROSAT_DIR = f'/scratch-shared/{opt.user_path}/waffle-data/eurosat'
+    PLACES365_DIR = f'/scratch-shared/{opt.user_path}/waffle-data/places365'
+    PETS_DIR = f'/scratch-shared/{opt.user_path}/waffle-data/pets'
+    FOOD101_DIR = f'/scratch-shared/{opt.user_path}/waffle-data/food101'
+    DTD_DIR = f'/scratch-shared/{opt.user_path}/waffle-data/dtd'
+    FLOWERS102_DIR = f'/scratch-shared/{opt.user_path}/waffle-data/flowers102'
+    FGVCAIRCRAFT_DIR = f'/scratch-shared/{opt.user_path}/waffle-data/fgvcaircraft'
+    CARS_DIR = f'/scratch-shared/{opt.user_path}/waffle-data/cars'
+    WIKIART_DIR = f'/scratch-shared/{opt.user_path}/waffle-data/WIKIART'
 
     # PyTorch datasets
     opt.tfms = _transform(opt.image_size)
@@ -186,6 +201,12 @@ def setup(opt: argparse.Namespace):
         dataset = dsclass(opt.data_dir, split='test', transform=opt.tfms, download=True)
         opt.classes_to_load = None
         opt.descriptor_fname = 'descriptors_cars'
+
+    elif opt.dataset == 'wikiart':
+        opt.data_dir = pathlib.Path(WIKIART_DIR)
+        dataset = load_dataset("huggan/wikiart", cache_dir=opt.data_dir)
+        opt.classes_to_load = None #dataset.classes
+        opt.descriptor_fname = 'descriptors_wikiart'
     
     if opt.descriptor_fname is not None:
         opt.descriptor_fname = './descriptors/' + opt.descriptor_fname

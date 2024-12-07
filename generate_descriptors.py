@@ -4,15 +4,38 @@ import json
 import pathlib
 import numpy as np
 import time
-openai.api_key = 'your_key'
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Get API key from environment variables
+API_KEY = os.getenv('OPENAI_API_KEY')
+USER = os.getenv('USER')
+
+if not API_KEY:
+    raise ValueError("API_KEY environment variable is not set. Please check your .env file.")
+if not USER:
+    raise ValueError("USER environment variable is not set. Please check your .env file.")
+
+openai.api_key = API_KEY
 
 #%% Example Description Generation for FGVCAircraft
-from torchvision.datasets import FGVCAircraft
+# from torchvision.datasets import FGVCAircraft
 
-AIRCRAFT_DIR = 'your_path/fgvcaircraft'
-data_dir = pathlib.Path(AIRCRAFT_DIR)
-dataset = FGVCAircraft(data_dir, split='test', annotation_level='family', download=True)
-classnames = dataset.classes
+# AIRCRAFT_DIR = 'your_path/fgvcaircraft'
+# data_dir = pathlib.Path(AIRCRAFT_DIR)
+# dataset = FGVCAircraft(data_dir, split='test', annotation_level='family', download=True)
+# classnames = dataset.classes
+
+# WIKIART dataset
+from datasets import load_dataset
+
+WIKIART_DIR = f'/scratch-shared/{USER}/waffle-data/WIKIART'
+data_dir = pathlib.Path(WIKIART_DIR)
+dataset = load_dataset("huggan/wikiart", cache_dir=data_dir)
+classnames = dataset['train'].features['genre'].names
 
 #%% Generate Prompts.
 def generate_prompt(category_name: str):
@@ -51,7 +74,7 @@ descriptions = []
 for i in np.arange(0, len(prompts), 20):
     st = time.time()
     response = openai.Completion.create(
-        model="text-davinci-003",
+        model="text-embedding-3-large",
         prompt=prompts[i:i + 20],
         temperature=0.7,
         max_tokens=100,
@@ -61,5 +84,5 @@ for i in np.arange(0, len(prompts), 20):
 
 #%% Write generated descriptions to JSON.
 descriptions_dict = {_c: _d for _c, _d in zip(dataset.classes, descriptions)}
-with open('descriptors/placeholder_name.json', 'w') as outfile:
+with open('descriptors/descriptors_wikiart.json', 'w') as outfile:
     outfile.write(json.dumps(descriptions_dict, indent=4))

@@ -1,0 +1,29 @@
+#!/bin/bash
+#SBATCH --partition=gpu
+#SBATCH --job-name=WaffleCLIP
+#SBATCH --gpus=1
+#SBATCH --cpus-per-task=4
+#SBATCH --ntasks-per-node=8
+#SBATCH --nodes=1
+#SBATCH --time=22:59:59
+#SBATCH --output=gen_descs_output_%A.out
+#SBATCH --error=gen_descs_output_%A.err
+
+module purge
+module load 2022
+module load Anaconda3/2022.05
+
+set + x
+
+cd $HOME/WaffleCLIP
+source activate waffle
+
+# Ensure clip is up-to-date: 
+pip install git+https://github.com/openai/CLIP.git
+
+# Default Zero-Shot Visual Classification Performance of CLIP
+python generate_descriptors.py
+
+# To extend the zero-shot classification of vanilla CLIP with GPT-3 generated descriptions following Menon et al.
+# 2023 on e.g. the ImageNet1K test data, simply run
+python generate_descriptors.py

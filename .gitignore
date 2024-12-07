@@ -2,3 +2,6 @@
 __pycache__
 precomputed_encs
 waffle.egg-info
+*.err
+*.out
+.env

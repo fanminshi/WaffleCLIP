@@ -1,0 +1,116 @@
+{
+    "abstract_painting": [
+        "lack of recognizable or realistic subjects",
+        "use of shapes, lines, and colors in non-representational ways",
+        "bold, irregular, or fluid brushstrokes",
+        "patterns or textures that may appear chaotic or highly structured",
+        "emphasis on color contrasts, gradients, or blending",
+        "absence of clear perspective or depth, focusing on a flat, two-dimensional plane",
+        "mixed media or experimental materials (e.g., paint splatters, drips, or layered textures)",
+        "overall impression of conveying emotion or concept rather than a specific scene or object"
+    ],
+    "cityscape": [
+        "a collection of buildings, often varying in height and style",
+        "tall skyscrapers or distinctive architectural structures",
+        "streets, roads, or bridges",
+        "signs of human activity such as vehicles, lights, or people",
+        "artificial lighting, particularly at night, creating a glow or reflections",
+        "urban elements like streetlights, billboards, or antennas",
+        "a horizon line often filled with dense structures",
+        "natural elements integrated into the scene, such as parks or rivers, contrasted with the built "
+    ],
+    "genre_painting": [
+        "depiction of scenes from everyday life, often of ordinary people engaged in common activities",
+        "detailed and realistic settings, such as domestic interiors, marketplaces, or public spaces",
+        "a focus on storytelling or capturing a moment, often with emotional or humorous undertones",
+        "use of naturalistic lighting and color palettes to convey realism",
+        "inclusion of objects and props that enhance the narrative or setting, such as furniture, tools, or food items",
+        "dynamic composition with people interacting, often arranged in a way that suggests movement or spontaneity",
+        "clothing and hairstyles reflecting a specific time period or culture, giving historical or social context",
+        "emphasis on human expressions, gestures, and relationships to convey intimacy and relatability."
+    ],
+    "illustration": [
+        "stylized or non-photorealistic appearance",
+        "bold outlines or exaggerated features",
+        "use of vibrant or limited color palettes",
+        "flat or textured shading, often lacking realistic depth",
+        "visible brushstrokes, pencil marks, or digital art patterns",
+        "characters, objects, or scenes depicted in a creative or fantastical manner",
+        "absence of photographic textures like natural skin, fur, or realistic lighting",
+        "text elements integrated as part of the design (e.g., speech bubbles or captions)",
+        "uniform or abstract backgrounds contrasting with detailed foreground elements"
+    ],
+    "landscape": [
+        "wide, open area encompassing natural scenery",
+        "presence of geographic elements such as mountains, valleys, rivers, or plains",
+        "vegetation, such as trees, grass, or shrubs",
+        "variations in elevation or perspective, often showing depth and horizon",
+        "natural lighting, typically influenced by time of day (e.g., sunrise, sunset)",
+        "sky often occupying a significant portion of the image, possibly with clouds or stars",
+        "absence or minimal inclusion of man-made structures",
+        "seasonal indicators, like snow for winter or blossoms for spring",
+        "diverse textures, such as rough rock, smooth water, or soft grass."
+    ],
+    "nude_painting": [
+        "depiction of one or more unclothed or partially clothed human figures",
+        "artistic composition, often with emphasis on the human form",
+        "painted medium, such as oil, acrylic, or watercolor",
+        "a background that may include abstract, natural, or indoor settings",
+        "visible brushstrokes or textured surface typical of painting",
+        "framing or canvas edges",
+        "stylistic elements that may suggest a particular artistic movement or period",
+        "poses or expressions emphasizing aesthetic or emotional qualities rather than explicit "
+    ],
+    "portrait": [
+        "A focused depiction of a person or a group of people, usually from the shoulders up.",
+        "Prominent facial features, often detailed and expressive.",
+        "Framed composition, emphasizing the subject's face or upper body.",
+        "Backgrounds may be plain or softly blurred to highlight the subject.",
+        "The subject's eyes are often directed towards the viewer, but they may also look away for artistic effect.",
+        "Lighting accentuates the face, highlighting contours and expressions.",
+        "Clothing and accessories may give context or reflect the subject's personality.",
+        "Artistic or photographic framing, often in vertical (portrait) orientation."
+    ],
+    "religious_painting": [
+        "presence of religious symbols (e.g., crosses, halos, sacred books)",
+        "depictions of divine or holy figures (e.g., saints, deities, angels)",
+        "scenes from religious texts or traditions (e.g., nativity scenes, crucifixion, enlightenment moments)",
+        "use of gold or bright colors for a divine or sacred aura",
+        "traditional or ceremonial clothing on figures",
+        "iconic poses or gestures (e.g., hands in prayer, blessing gestures)",
+        "ornate frames or decorative backgrounds indicating reverence",
+        "inscriptions or scrolls with religious text",
+        "architectural elements like altars or stained glass motifs",
+        "a sense of solemnity or divinity in the expressions and composition."
+    ],
+    "sketch_and_study": [
+        "Paper or ",
+        "Pencil or charcoal marks, often with visible shading and ",
+        "Rough or unfinished ",
+        "Drafts or multiple iterations of the same ",
+        "Artistic tools like erasers, rulers, or ",
+        "Focus on details or proportions, with some areas of the drawing left ",
+        "Light pencil strokes or ",
+        "May include measurements, annotations, or guiding "
+    ],
+    "still_life": [
+        "A carefully arranged composition of inanimate ",
+        "Objects such as fruit, flowers, vases, bottles, and everyday ",
+        "Static, non-moving ",
+        "A focus on textures, shapes, and ",
+        "A sense of balance and harmony in the ",
+        "Often captured in a close-up or tabletop ",
+        "Dramatic or soft lighting, with shadows emphasizing ",
+        "A muted or neutral color palette, though sometimes vibrant colors are used depending on the subject "
+    ],
+    "Unknown Genre": [
+        "Ambiguous or abstract ",
+        "Unclear or mixed style (e.g., combining elements from different artistic genres, themes, or media",
+        "A lack of distinct, identifiable characteristics (e.g., no clear focus on one particular object or subject",
+        "Non-traditional compositions, angles, or color ",
+        "Unusual or undefined objects or ",
+        "Evolving, ever-changing forms or themes without a clear cultural or historical ",
+        "Surreal or dream-like "
+    ]
+}
+    

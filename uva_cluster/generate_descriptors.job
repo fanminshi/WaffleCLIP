@@ -19,7 +19,7 @@ cd $HOME/WaffleCLIP
 source activate waffle
 
 # Ensure clip is up-to-date: 
-pip install git+https://github.com/openai/CLIP.git
+# pip install git+https://github.com/openai/CLIP.git
 
 # Default Zero-Shot Visual Classification Performance of CLIP
 python generate_descriptors.py

@@ -204,7 +204,8 @@ def setup(opt: argparse.Namespace):
 
     elif opt.dataset == 'wikiart':
         opt.data_dir = pathlib.Path(WIKIART_DIR)
-        dataset = load_dataset("huggan/wikiart", cache_dir=opt.data_dir)
+        dataset = load_dataset("huggan/wikiart", cache_dir=opt.data_dir. transform=opt.tfms)
+        dataset.format('torch')
         opt.classes_to_load = None #dataset.classes
         opt.descriptor_fname = 'descriptors_wikiart'
     

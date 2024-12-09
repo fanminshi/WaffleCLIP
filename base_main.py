@@ -94,9 +94,8 @@ else:
     label_coll = []
     with torch.no_grad():
         for batch_number, batch in enumerate(tqdm.tqdm(dataloader, desc='Precomputing image embeddings...')):
-            images, labels = batch
-            images = images.to(device)
-            labels = labels.to(device)
+            images = batch['image'].to(device)
+            labels = batch['genre'].to(device)
             label_coll.append(labels)
             
             image_encodings = F.normalize(model.encode_image(images))

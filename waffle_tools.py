@@ -205,8 +205,15 @@ def setup(opt: argparse.Namespace):
     elif opt.dataset == 'wikiart':
         opt.data_dir = pathlib.Path(WIKIART_DIR)
         dataset = load_dataset("huggan/wikiart", cache_dir=opt.data_dir)
-        # Set image transform function
-        dataset.set_transform(lambda examples: {'image': [opt.tfms(img) for img in examples['image']]})
+
+        # Set image transform function and retain labels
+        def transform_function(examples):
+            return {
+                'image': [opt.tfms(img) for img in examples['image']],
+                'genre': examples['genre'],  # Retain the 'genre' labels
+            }
+
+        dataset.set_transform(transform_function)
         dataset = dataset['train']  # Select the train split
         opt.classes_to_load = None
         opt.descriptor_fname = 'descriptors_wikiart'

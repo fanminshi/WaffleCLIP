@@ -1,0 +1,2 @@
+savename=waffle_wikiart_concepts; dataset=wikiart; mode=waffle; model_size=ViT-B/32; label_before_text=A photo of a visual art: a ,41.32778346538544,0.0,41.32778346538544,41.32778346538544,86.77987456321716,0.0,86.77987456321716,86.77987456321716
+savename=waffle_wikiart_concepts; dataset=wikiart; mode=waffle; model_size=ViT-B/32; label_before_text=A photo of a visual art: a ,4.986248165369034,0.0,4.986248165369034,4.986248165369034,22.40312397480011,0.0,22.40312397480011,22.40312397480011

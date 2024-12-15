@@ -22,10 +22,10 @@ source activate waffle
 pip install git+https://github.com/openai/CLIP.git
 
 # Default Zero-Shot Visual Classification Performance of CLIP
-# python base_main.py --savename='baseline_wikiart' --dataset=wikiart --mode=clip --model_size=ViT-B/32
+python base_main.py --savename='baseline_wikiart_style' --dataset=wikiart --mode=clip --model_size=ViT-B/32
 
-python base_main.py --savename='baseline_wikiart' --dataset=wikiart --mode=gpt_descriptions --model_size=ViT-B/32
+python base_main.py --savename='baseline_wikiart_style' --dataset=wikiart --mode=gpt_descriptions --model_size=ViT-B/32
 
-# To extend the zero-shot classification of vanilla CLIP with GPT-3 generated descriptions following Menon et al.
-# 2023 on e.g. the ImageNet1K test data, simply run
-# python base_main.py --savename='waffle_wikiart' --dataset=wikiart --mode=waffle --model_size=ViT-B/32
+# # To extend the zero-shot classification of vanilla CLIP with GPT-3 generated descriptions following Menon et al.
+# # 2023 on e.g. the ImageNet1K test data, simply run
+python base_main.py --savename='waffle_wikiart_style' --dataset=wikiart --mode=waffle --model_size=ViT-B/32

@@ -1,0 +1,31 @@
+#!/bin/bash
+#SBATCH --partition=gpu
+#SBATCH --job-name=WaffleCLIP
+#SBATCH --gpus=1
+#SBATCH --cpus-per-task=4
+#SBATCH --ntasks-per-node=8
+#SBATCH --nodes=1
+#SBATCH --time=22:59:59
+#SBATCH --output=uva_cluster/output/eval_wallfe_output_%A.out
+#SBATCH --error=uva_cluster/output/eval_wallfe_output_%A.err
+
+module purge
+module load 2022
+module load Anaconda3/2022.05
+
+set + x
+
+cd $HOME/WaffleCLIP
+source activate waffle
+
+# Ensure clip is up-to-date: 
+pip install git+https://github.com/openai/CLIP.git
+
+# Default Zero-Shot Visual Classification Performance of CLIP
+python base_main.py --savename='baselines_concepts' --dataset=wikiart --mode=clip --model_size=ViT-B/32 --label_before_text='A photo of a visual art: a '
+
+python base_main.py --savename='baselines_concepts' --dataset=wikiart --mode=gpt_descriptions --model_size=ViT-B/32 --label_before_text='A photo of a visual art: a '
+
+# # To extend the zero-shot classification of vanilla CLIP with GPT-3 generated descriptions following Menon et al.
+# # 2023 on e.g. the ImageNet1K test data, simply run
+python base_main.py --savename='waffle_wikiart_concepts' --dataset=wikiart --mode=waffle --model_size=ViT-B/32 --label_before_text='A photo of a visual art: a '

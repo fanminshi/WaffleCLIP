@@ -216,7 +216,7 @@ def setup(opt: argparse.Namespace):
         dataset.set_transform(transform_function)
         dataset = dataset['train']  # Select the train split
         opt.classes_to_load = None
-        opt.descriptor_fname = 'descriptors_wikiart'
+        opt.descriptor_fname = 'GPTstyle_descriptors_wikiart'
     
     if opt.descriptor_fname is not None:
         opt.descriptor_fname = './descriptors/' + opt.descriptor_fname

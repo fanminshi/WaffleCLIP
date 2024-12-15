@@ -35,7 +35,7 @@ from datasets import load_dataset
 WIKIART_DIR = f'/scratch-shared/{USER}/waffle-data/WIKIART'
 data_dir = pathlib.Path(WIKIART_DIR)
 dataset = load_dataset("huggan/wikiart", cache_dir=data_dir)
-classnames = dataset['train'].features['genre'].names
+classnames = dataset['train'].features['style'].names
 print(classnames)
 
 #%% Generate Prompts.
@@ -68,41 +68,41 @@ A: There are several useful visual features to tell there is a {category_name} i
 prompts = [generate_prompt(_c) for _c in classnames]
 print(*prompts, sep='\n')
 
-# #%% Query GPT-3.
-# def stringtolist(description):
-#     return [descriptor[2:] for descriptor in description.split('\n') if (descriptor != '') and (descriptor.startswith('- '))]
+#%% Query GPT-3.
+def stringtolist(description):
+    return [descriptor[2:] for descriptor in description.split('\n') if (descriptor != '') and (descriptor.startswith('- '))]
 
-# descriptions = []
-# reqs = 0
-# for i, prompt in enumerate(prompts):
-#     st = time.time()
-#     response = client.chat.completions.create(
-#     model="gpt-3.5-turbo",
-#     messages=[
-#         {
-#         "role": "user",
-#         "content": prompt
-#         }
-#     ],
-#     temperature=0.7,
-#     max_tokens=100,
-#     )
+descriptions = []
+reqs = 0
+for i, prompt in enumerate(prompts):
+    st = time.time()
+    response = client.chat.completions.create(
+    model="gpt-3.5-turbo",
+    messages=[
+        {
+        "role": "user",
+        "content": prompt
+        }
+    ],
+    temperature=0.7,
+    max_tokens=100,
+    )
     
-#     # response = openai.Completion.create(
-#     #     model="text-embedding-3-large",
-#     #     prompt=prompts[i:i + 20],
-#     #     temperature=0.7,
-#     #     max_tokens=100,
-#     # )
-#     print(i, ":", time.time() - st)
-#     reqs += 1
-#     descriptions += [stringtolist(_r["text"]) for _r in response["choices"]]
-#     # deal with rate limit
-#     if reqs > 2:
-#         time.sleep(61)
-#         reqs = 0
+    # response = openai.Completion.create(
+    #     model="text-embedding-3-large",
+    #     prompt=prompts[i:i + 20],
+    #     temperature=0.7,
+    #     max_tokens=100,
+    # )
+    print(i, ":", time.time() - st)
+    reqs += 1
+    descriptions += [stringtolist(choice.message.content) for choice in response.choices]
+    # deal with rate limit
+    if reqs > 2:
+        time.sleep(61)
+        reqs = 0
 
-# #%% Write generated descriptions to JSON.
-# descriptions_dict = {_c: _d for _c, _d in zip(dataset.classes, descriptions)}
-# with open('descriptors/descriptors_wikiart.json', 'w') as outfile:
-#     outfile.write(json.dumps(descriptions_dict, indent=4))
+#%% Write generated descriptions to JSON.
+descriptions_dict = {_c: _d for _c, _d in zip(classnames, descriptions)}
+with open('descriptors/STYLE_descriptors_wikiart.json', 'w') as outfile:
+    outfile.write(json.dumps(descriptions_dict, indent=4))

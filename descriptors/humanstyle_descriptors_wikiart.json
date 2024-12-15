@@ -1,0 +1,153 @@
+{
+    "Abstract_Expressionism": [
+        "emphasis on spontaneous, automatic, or subconscious creation",
+        "focuses on conveying emotions and ideas through abstract forms"
+    ],
+    "Action_painting": [
+        "painting is spontaneously dribbled, splashed or smeared onto the canvas"
+    ],
+    "Analytical_Cubism": [
+        "fragmentary appearance of multiple viewpoints and overlapping planes"
+    ],
+    "Art_Nouveau": [
+        "natural forms such as the sinuous curves of plants and flowers",
+        "dynamism and movement",
+        "use of modern materials, particularly iron, glass, ceramics and later concrete",
+        "unusual forms and larger open spaces"
+    ],
+    "Baroque": [
+        "used contrast, movement, exuberant detail, deep color, grandeur",
+        "employs plentiful and intricate ornamentation"
+    ],
+    "Color_Field_Painting": [
+        "large fields of flat, solid color spread across or stained into the canvas",
+        "areas of unbroken surface and a flat picture plane"
+    ],
+    "Contemporary_Realism": [
+        "celebrates representational, well-executed paintings created with high technical skill",
+        "figurative art works created in a natural yet highly objective style"
+    ],
+    "Cubism": [
+        "subjects are analyzed, broken up, and reassembled in an abstract form",
+        "different views of subjects together in the same picture",
+        "paintings appear fragmented and abstracted"
+    ],
+    "Early_Renaissance": [
+        "painted in tempera on panel and later in oil on canvas"
+    ],
+    "Expressionism": [
+        "expresses with waves",
+        "not a realistic portrayal of life",
+        "can contain a human, creature or landscape"
+    ],
+    "Fauvism": [
+        "paintings with very warm colors",
+        "often a landscape or a portrayal of a human"
+    ],
+    "High_Renaissance": [
+        "very realistic portrayal of humans",
+        "either one human who is posing or a group of people",
+        "the humans are posing and have a connection with each other"
+    ],
+    "Impressionism": [
+        "paintings that are more or less green or blue colored",
+        "portrays bridges or boats on the water"
+    ],
+    "Mannerism_Late_Renaissance": [
+        "portrayal of humans in the 1600 century",
+        "often a group of people who are posing in a weird way",
+        "some paintings cover a mother with a baby",
+        "people are posing or pointing at something"
+    ],
+    "Minimalism": [
+        "paintings with simple lines, edges or simple forms",
+        "squares with colors"
+    ],
+    "Naive_Art_Primitivism": [
+        "the painting gets less detailed with distance",
+        "muting colors with distance",
+        "portraying nature"
+    ],
+    "New_Realism": [
+        "paints the world as an image to bring life and art closer together",
+        "return to reality",
+        "20th century art"
+    ],
+    "Northern_Renaissance": [
+        "oil paintings to capture detail and color",
+        "illustrating biblical narratives",
+        "figures animated with emotion"
+    ],
+    "Pointillism": [
+        "splotches of paint making up painting",
+        "practice of blending colors in dots on painting",
+        "every-day scenes, or passing of time as subject",
+        "vibrant luminous appearance",
+        "blending of basic colors"
+    ],
+    "Pop_Art": [
+        "use of pop culture in art",
+        "advertising and comic books",
+        "banal and kitsch elements",
+        "work is removed from its original context",
+        "found objects and images",
+        "sharp lines and contrasting colors"
+    ],
+    "Post_Impressionism": [
+        "painting from life",
+        "more emphasis on geometry",
+        "use of saturated, sometimes unnatural colors",
+        "abstract focus on harmony and composition",
+        "rejection of impressionist limitations"
+    ],
+    "Realism": [
+        "truthful representation of subject matter",
+        "precise, detailed and accurate",
+        "mundane and ordinary subjects",
+        "unprettified detail",
+        "realistic colors and lighting"
+    ],
+    "Rococo": [
+        "lightness and elegance",
+        "curving natural forms",
+        "graceful, sentimental appearance",
+        "delicate brushwork",
+        "exaggeration of natural colors",
+        "1730 to 1760"
+    ],
+    "Romanticism": [
+        "natural and supernatural subjects",
+        "grandiosity",
+        "religious, mythological themes",
+        "emphasis on landscapes",
+        "moody atmosphere",
+        "1800 to 1850"
+    ],
+    "Symbolism": [
+        "metaphorical images",
+        "surreal elements",
+        "depiction of spiritual ideas",
+        "contorted shapes",
+        "otherworldly and mystical",
+        "1860 to 1900"
+    ],
+    "Synthetic_Cubism": [
+        "collage elements",
+        "newspaper print and patterned paper",
+        "geometric, mostly rectangular shapes",
+        "2 dimensional",
+        "various textures",
+        "1910 to 1919"
+    ],
+    "Ukiyo_e": [
+        "saturated colors",
+        "shapes outlined with black",
+        "people depicted from the side",
+        "Japanese themes",
+        "panels",
+        "detailed geometry",
+        "no shading",
+        "robed figures",
+        "1600 to 1870"
+    ]
+}

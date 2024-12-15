@@ -1,0 +1,260 @@
+{
+    "Abstract_Expressionism": [
+        "bold, expressive brushstrokes",
+        "non-representational or abstract subject matter",
+        "use of color and texture to convey emotion or meaning",
+        "lack of distinct forms or shapes",
+        "emphasis on the act of painting itself",
+        "a sense of spontaneity and improvisation",
+        "use of unconventional materials or techniques"
+    ],
+    "Action_painting": [
+        "abstract, spontaneous brush strokes",
+        "vibrant colors",
+        "splatters and drips of paint",
+        "lack of recognizable subject matter",
+        "sense of movement and energy",
+        "use of unconventional tools or techniques",
+        "texture created by thick layers of paint",
+        "non-traditional composition or perspective"
+    ],
+    "Analytical_Cubism": [
+        "geometric shapes and forms",
+        "fragmented and abstracted objects",
+        "multiple viewpoints depicted simultaneously",
+        "muted color palette",
+        "emphasis on structure and form rather than realistic representation",
+        "use of lines, angles, and overlapping shapes",
+        "lack of shading or perspective",
+        "distorted or exaggerated proportions"
+    ],
+    "Art_Nouveau": [
+        "intricate and decorative designs with curved lines and asymmetrical shapes",
+        "use of natural motifs such as flowers, plants, and animals",
+        "use of vibrant colors and ornate patterns",
+        "incorporation of materials such as stained glass, metalwork, and ceramics",
+        "fluid and flowing forms",
+        "stylized and elongated figures",
+        "decorative typography and lettering",
+        "incorporation of geometric shapes and patterns"
+    ],
+    "Baroque": [
+        "ornate and elaborate decoration",
+        "dramatic use of light and shadow",
+        "rich colors and textures",
+        "detailed and intricate patterns",
+        "curved lines and exaggerated forms",
+        "grand and imposing architecture",
+        "religious or mythological themes",
+        "use of perspective and illusionistic effects"
+    ],
+    "Color_Field_Painting": [
+        "large, flat expanses of solid color",
+        "minimal or no recognizable forms or shapes",
+        "emphasis on color relationships and how colors interact with each other",
+        "often uses simple geometric shapes like squares or rectangles",
+        "absence of visible brushstrokes or texture",
+        "smooth and even application of paint",
+        "a sense of depth or space created through color and composition"
+    ],
+    "Contemporary_Realism": [
+        "realistic depiction of subjects",
+        "attention to detail",
+        "use of light and shadow",
+        "accurate representation of colors and textures",
+        "focus on everyday scenes or objects",
+        "emphasis on capturing the essence of the subject",
+        "use of contemporary themes and subjects",
+        "a sense of immediacy and relevance in the artwork."
+    ],
+    "Cubism": [
+        "fragmented and abstracted forms",
+        "multiple viewpoints depicted simultaneously",
+        "use of bold colors and patterns",
+        "distorted and flattened perspectives",
+        "emphasis on structure and form over realistic representation",
+        "incorporation of text or collage elements"
+    ],
+    "Early_Renaissance": [
+        "detailed and realistic depiction of human figures",
+        "use of perspective to create depth in the composition",
+        "religious or mythological subject matter",
+        "rich colors and intricate patterns",
+        "attention to detail in clothing, architecture, and landscape",
+        "symbolic use of objects or animals",
+        "emotional expression in the faces of the figures"
+    ],
+    "Expressionism": [
+        "bold and vibrant colors",
+        "distorted or exaggerated forms",
+        "emotional or psychological themes",
+        "visible brushstrokes",
+        "use of symbolism or abstraction",
+        "expressive and subjective interpretation of reality",
+        "emphasis on conveying the artist's emotions and feelings",
+        "unconventional compositions or perspectives"
+    ],
+    "Fauvism": [
+        "bold and vibrant colors",
+        "simplified and distorted forms",
+        "expressive brushwork",
+        "non-naturalistic color choices",
+        "flat and abstracted compositions",
+        "emphasis on emotion and feeling over realistic representation",
+        "use of patterns and decorative elements"
+    ],
+    "High_Renaissance": [
+        "realistic and detailed figures",
+        "use of perspective and depth",
+        "balanced composition",
+        "use of light and shadow to create a sense of volume",
+        "idealized and harmonious depictions of human figures",
+        "rich color palette",
+        "attention to detail in clothing and background elements",
+        "religious or mythological themes",
+        "emphasis on emotional and psychological expression in figures' faces and gestures."
+    ],
+    "Impressionism": [
+        "visible brush strokes",
+        "use of light and color to create a sense of movement and atmosphere",
+        "blurred or undefined edges",
+        "focus on capturing the momentary effects of light and color",
+        "scenes of everyday life or nature",
+        "emphasis on the artist's perception and interpretation of the subject",
+        "lack of fine detail or precise lines"
+    ],
+    "Mannerism_Late_Renaissance": [
+        "exaggerated poses or gestures",
+        "intricate and complex compositions",
+        "use of bright, unnatural colors",
+        "dramatic lighting",
+        "ambiguous spatial relationships",
+        "distorted perspective",
+        "emotional intensity in facial expressions",
+        "ornate and intricate details",
+        "stylized and idealized figures"
+    ],
+    "Minimalism": [
+        "clean, simple lines and shapes",
+        "minimal color palette",
+        "lack of clutter or unnecessary elements",
+        "focus on negative space",
+        "geometric shapes or patterns",
+        "use of natural light",
+        "intentional composition and balance",
+        "emphasis on functionality and purpose rather than decoration"
+    ],
+    "Naive_Art_Primitivism": [
+        "bright, bold colors",
+        "simplistic, childlike shapes and figures",
+        "lack of perspective or proportion",
+        "flat, two-dimensional composition",
+        "folk art or tribal influences",
+        "whimsical or fantastical subject matter",
+        "use of patterns or repetitive motifs",
+        "raw or unrefined technique"
+    ],
+    "New_Realism": [
+        "sharp focus on everyday objects and scenes",
+        "attention to detail and realistic depiction",
+        "use of light and shadow to create depth",
+        "emphasis on the mundane and ordinary",
+        "accurate representation of subjects without idealization or distortion",
+        "use of color and composition to create a sense of reality",
+        "often depicts urban or industrial environments",
+        "may include elements of social commentary or critique"
+    ],
+    "Northern_Renaissance": [
+        "detailed and realistic portrayals of human subjects",
+        "use of light and shadow to create depth and dimension",
+        "intricate patterns and textures in clothing and backgrounds",
+        "attention to naturalistic details in landscapes and still life subjects",
+        "rich, vibrant colors",
+        "religious or allegorical themes",
+        "use of symbolism and hidden meanings in artwork"
+    ],
+    "Pointillism": [
+        "small, distinct dots of color that are applied in patterns or as a whole image",
+        "the use of contrasting colors to create shapes and forms",
+        "the overall image may appear blurry or pixelated up close, but forms a cohesive image from a distance",
+        "the technique of using small dots to create an overall impression of color and form",
+        "the use of optical blending to create different tones and hues by placing colors next to each other in small dots"
+    ],
+    "Pop_Art": [
+        "bold, graphic shapes",
+        "use of popular culture references",
+        "exaggerated or distorted imagery",
+        "comic book style",
+        "repetition of images or patterns",
+        "use of text or speech bubbles",
+        "use of commercial or mass-produced imagery",
+        "often a sense of irony or commentary on consumer culture"
+    ],
+    "Post_Impressionism": [
+        "vibrant colors",
+        "visible brushstrokes",
+        "use of geometric shapes",
+        "distortion of reality",
+        "emphasis on light and shadow",
+        "bold compositions",
+        "use of pointillism or divisionism techniques",
+        "exploration of emotions and subjective interpretations of reality"
+    ],
+    "Realism": [
+        "lifelike representation of subjects",
+        "attention to detail",
+        "realistic lighting and shadows",
+        "accurate depiction of textures",
+        "naturalistic colors",
+        "absence of exaggerated or stylized elements",
+        "focus on everyday subjects or scenes",
+        "precise rendering of proportions and perspective"
+    ],
+    "Rococo": [
+        "elaborate and ornate decoration",
+        "pastel colors",
+        "asymmetrical designs",
+        "curved lines and ornamental motifs",
+        "gilded surfaces",
+        "use of mirrors and reflective surfaces",
+        "ornate furniture and furnishings",
+        "detailed and intricate patterns"
+    ],
+    "Romanticism": [
+        "dramatic lighting and shadow",
+        "emotional expression or intensity in the subject",
+        "nature scenes or landscapes",
+        "emphasis on individualism and emotion",
+        "use of vibrant colors and bold contrasts",
+        "focus on the sublime and awe-inspiring aspects of nature",
+        "use of symbolism and allegory",
+        "emphasis on imagination and creativity",
+        "a sense of nostalgia or longing for the past"
+    ],
+    "Symbolism": [
+        "Repetition of certain symbols or motifs throughout the image",
+        "Use of contrasting elements to convey a deeper meaning",
+        "Placement of objects or figures in a specific way to symbolize a concept or idea",
+        "Use of lighting and shadows to create a symbolic atmosphere",
+        "Incorporation of cultural or historical symbols that hold significance in the context of the photo"
+    ],
+    "Synthetic_Cubism": [
+        "geometric shapes and patterns",
+        "overlapping and intersecting forms",
+        "fragmented and abstracted objects",
+        "bold and bright colors",
+        "flat and two-dimensional compositions",
+        "collage elements",
+        "a sense of playfulness and experimentation"
+    ],
+    "Ukiyo_e": [
+        "Japanese woodblock print",
+        "vibrant colors",
+        "intricate designs and patterns",
+        "scenes of everyday life in Japan",
+        "often depicting geishas, samurais, nature, or kabuki actors",
+        "usually with a border or frame around the image",
+        "can include Japanese calligraphy or text",
+        "may have the artist's signature or seal at the bottom of the print"
+    ]
+}

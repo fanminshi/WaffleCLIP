@@ -1,0 +1,66 @@
+{
+    "abstract_painting": [
+        "Non recognizable pattern and objects",
+        "Abstraction indicates a departure from reality in depiction of imagery in art",
+        "Uses shapes, colours, forms and gestural marks to achieve its effect"
+    ],
+    "cityscape": [
+        "focus on buildings, streets, and any urban elements"
+    ],
+    "genre_painting": [
+        "portraying ordinary people engaged in common activities",
+        "The term genre painting refers to paintings which depict scenes of everyday life"
+    ],
+    "illustration": [
+        "Black and white art",
+        "Art made with only using a pencil",
+        "Visually close to abstract, but can grasp what is being portrayed"
+    ],
+    "landscape": [
+        "Focus on picturing mountains, forests or beach",
+        "Frequently using blue colors, not always",
+        "Portraying pictures you could see with your own eye in the nature"
+    ],
+    "nude_painting": [
+        "Paintings with naked humans",
+        "The human that is being portrayed is frequently posing",
+        "The background is either indoor, solid or abstract"
+    ],
+    "portrait": [
+        "Portrays person, or multiple people",
+        "Person facing painter",
+        "Composed around people",
+        "historical, homely environment",
+        "Lighting accentuates persons"
+    ],
+    "religious_painting": [
+        "Paintings with religious symbols",
+        "Paintings with holy figures",
+        "Bright, vivid colours",
+        "Historical depictions",
+        "Depiction of religious events",
+        "Grandiose, ethereal divine"
+    ],
+    "sketch_and_study": [
+        "Practice for the artist",
+        "Process art",
+        "drawn art with rough outlines of objects and subjects",
+        "art with several variations and iterations of subjects",
+        "rudimentary shading",
+        "Pencil or dark paint outlines only"
+    ],
+    "still_life": [
+        "painting of food",
+        "painting of common objects",
+        "Painting of human made objects",
+        "Painting of natural objects",
+        "Arranged objects",
+        "Historical allegories",
+        "Various colors on simple background",
+        "Lowest in classical genre hierarchy"
+    ],
+    "unknown_genre": [
+        "Elements that do not connect to any classical painting genre",
+        "Lack of characteristics that connect distinctly to other genres"
+    ]
+}
